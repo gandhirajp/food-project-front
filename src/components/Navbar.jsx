@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { logoutUser } from '../actions/userActions';
 
 function Navbar() {
@@ -13,9 +12,9 @@ function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-sm shadow-lg p-3 mb-5 navbarr rounded ">
-                <Link className="navbar-brand" to={"/"}>
+                <a className="navbar-brand"  href="/">
                     DNC FOOD SHOP
-                </Link>
+                </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -35,17 +34,17 @@ function Navbar() {
                             </div>
                         ) : (
                             <li className="nav-item ">
-                                <Link className="nav-link" to={"/login"}>
+                                <a className="nav-link" href="/login">
                                     Login 
-                                </Link>
+                                </a>
                             </li>
                         )}
 
 
                         <li className="nav-item">
-                            <Link className="nav-link" to={"/cart"}>
+                            <a className="nav-link" href="/cart">
                                 Cart {cartstate.cartItems.length}
-                            </Link>
+                            </a>
                         </li>
 
                     </ul>
