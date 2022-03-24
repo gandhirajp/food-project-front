@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
@@ -11,7 +11,7 @@ import Registerscreen from './screens/Registerscreen';
 import Loginscreen from './screens/Loginscreen';
 import Adminscreen from './screens/Adminscreen';
 // order
-import Ordersscreen from './screens/Ordersscreen';
+// import Ordersscreen from './screens/Ordersscreen';
 
 // order
 
