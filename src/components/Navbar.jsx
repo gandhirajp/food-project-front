@@ -11,7 +11,7 @@ function Navbar() {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-sm shadow-lg p-3 mb-5 navbarr rounded ">
+            <nav className="navbar navbar-expand-sm shadow-lg p-3 bg-black  mb-5 navbarr rounded " style={{color:"white"}}>
                 <a className="navbar-brand"  href="/">
                     DNC FOOD SHOP
                 </a>
@@ -24,13 +24,13 @@ function Navbar() {
                         {/* current user name */}
                         {currentUser ? (
                             <div className="dropdown mt-2">
-                                <a className=" dropdown-toggle" style={{color:"black"}} type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className=" dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                    {currentUser.name}
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     {/* <a className="dropdown-item" href="/orders">Orders</a> */}
                                     <a className="dropdown-item" href="#" onClick={()=>{dispatch(logoutUser())}}><li>Logout</li></a>
-                                    
+
                                 </div>
                             </div>
                         ) : (
