@@ -20,25 +20,25 @@ export default function Cartscreen() {
 
           {cartItems.map(item => {
             return <div className="flex-container ">
-              <div className='cardd'>
-                <div className='text-left m-1 w-100'>
-                  <h1>{item.name}[{item.varient}]</h1>
-                  <h1>Price : {item.quantity} * {item.prices[0][item.varient]} ={item.price}</h1>
-                  <h1 style={{ display: "inline" }}>Quantity :</h1>
-                  <i className="fa fa-plus" aria-hidden="true" onClick={() => { dispatch(addToCart(item, item.quantity + 1, item.varient)) }}></i>
-                  <b>{item.quantity}</b>
-                  <i className="fa fa-minus" aria-hidden="true" onClick={() => { dispatch(addToCart(item, item.quantity - 1, item.varient)) }}></i>
-                  <hr />
-                </div>
-                <div className='m-1 w-100'>
-                  <img src={item.image} style={{ height: "80px", width: "80px" }} />
-                </div>
-
-                <div className='m-1 w-100'>
-                  <i className="fa fa-trash mt-5" aria-hidden="true" onClick={() => { dispatch(deleteFormCart(item)) }}></i>
-                </div>
+              <div className='card cardd'>
+                  <div className='text-left m-1 w-100'>
+                <h1>{item.name}[{item.varient}]</h1>
+                <h1>Price : {item.quantity} * {item.prices[0][item.varient]} ={item.price}</h1>
+                <h1 style={{ display: "inline" }}>Quantity :</h1>
+                <i className="fa fa-plus" aria-hidden="true" onClick={() => { dispatch(addToCart(item, item.quantity + 1, item.varient)) }}></i>
+                <b>{item.quantity}</b>
+                <i className="fa fa-minus" aria-hidden="true" onClick={() => { dispatch(addToCart(item, item.quantity - 1, item.varient)) }}></i>
+                <hr />
+              </div>
+              <div className='m-1 w-100'>
+                <img src={item.image} style={{ height: "80px", width: "80px" }} />
               </div>
 
+              <div className='m-1 w-100'>
+                <i className="fa fa-trash mt-5" aria-hidden="true" onClick={() => { dispatch(deleteFormCart(item)) }}></i>
+              </div>
+              </div>
+            
             </div>
           })}
 
@@ -46,7 +46,7 @@ export default function Cartscreen() {
         </div>
         <div className="col-md-4 text-right">
           <h2 className='fs-4'>SubTotal : ₹ {subtotal}</h2>
-          <Checkout subtotal={subtotal} />
+          <Checkout  subtotal={subtotal}/>
         </div>
 
       </div>
