@@ -12,14 +12,14 @@ function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-sm shadow-lg p-3  mb-5 text-white rounded  navvv">
-                <a className="navbar-brand color"  href="/">
+                <a className="navbar-brand text-white"  href="/">
                     DNC FOOD SHOP
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ml-auto mx-4 color">
+                    <ul className="navbar-nav ml-auto mx-4 text-white">
 
                         {/* current user name */}
                         {currentUser ? (
@@ -29,12 +29,12 @@ function Navbar() {
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     {/* <a className="dropdown-item" href="/orders">Orders</a> */}
-                                    <a className="dropdown-item" href="#" onClick={()=>{dispatch(logoutUser())}}><li>Logout</li></a>
+                                    <a className="dropdown-item " href="#" onClick={()=>{dispatch(logoutUser())}}><li>Logout</li></a>
 
                                 </div>
                             </div>
                         ) : (
-                            <li className="nav-item ">
+                            <li className="nav-item text-white">
                                 <a className="nav-link" href="/login">
                                     Login 
                                 </a>
@@ -42,7 +42,7 @@ function Navbar() {
                         )}
 
 
-                        <li className="nav-item">
+                        <li className="nav-item text-white">
                             <a className="nav-link" href="/cart">
                                 Cart {cartstate.cartItems.length}
                             </a>
