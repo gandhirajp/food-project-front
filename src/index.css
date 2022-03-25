@@ -89,8 +89,6 @@ input{
 }
 .backcolor{
   background-color: rgb(0,0,0,0.5);
+ 
 }
-.back{
-  background-image: linear-gradient(to right, yellow,green) !important;
 
-}
