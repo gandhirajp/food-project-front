@@ -20,8 +20,8 @@ export default function Cartscreen() {
 
           {cartItems.map(item => {
             return <div className="flex-container ">
-              <div className='card cardd'>
-                  <div className='text-left m-1 w-100'>
+
+              <div className='text-left m-1 w-100'>
                 <h1>{item.name}[{item.varient}]</h1>
                 <h1>Price : {item.quantity} * {item.prices[0][item.varient]} ={item.price}</h1>
                 <h1 style={{ display: "inline" }}>Quantity :</h1>
@@ -37,8 +37,6 @@ export default function Cartscreen() {
               <div className='m-1 w-100'>
                 <i className="fa fa-trash mt-5" aria-hidden="true" onClick={() => { dispatch(deleteFormCart(item)) }}></i>
               </div>
-              </div>
-            
             </div>
           })}
 

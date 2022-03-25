@@ -30,6 +30,7 @@ function Navbar() {
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     {/* <a className="dropdown-item" href="/orders">Orders</a> */}
                                     <a className="dropdown-item" href="#" onClick={()=>{dispatch(logoutUser())}}><li>Logout</li></a>
+                                    
                                 </div>
                             </div>
                         ) : (
