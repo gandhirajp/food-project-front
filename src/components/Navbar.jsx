@@ -19,7 +19,7 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ml-auto mx-4 text-white">
+                    <ul className="navbar-nav ml-auto mx-4 ">
 
                         {/* current user name */}
                         {currentUser ? (
