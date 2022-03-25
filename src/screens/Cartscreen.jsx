@@ -19,7 +19,7 @@ export default function Cartscreen() {
           <h2 style={{ fontSize: "40px" }}>My Cart</h2>
 
           {cartItems.map(item => {
-            return <div className="flex-container ">
+            return <div className="flex-container cardd">
 
               <div className='text-left m-1 w-100'>
                 <h1>{item.name}[{item.varient}]</h1>
